@@ -1,47 +1,47 @@
-local C = require('nordic.colors')
+local C = require('gruvbob.colors')
 
-local nordic = {}
+local gruvbob = {}
 
-nordic.normal = {
+gruvbob.normal = {
     a = { bg = C.orange.bright, fg = C.black0, gui = 'bold' },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.insert = {
+gruvbob.insert = {
     a = { bg = C.green.bright, fg = C.black0, gui = 'bold' },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.command = {
+gruvbob.command = {
     a = { bg = C.cyan.bright, fg = C.black0, gui = 'bold' },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.visual = {
+gruvbob.visual = {
     a = { bg = C.red.bright, fg = C.black0, gui = 'bold' },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.replace = {
+gruvbob.replace = {
     a = { bg = C.magenta.bright, fg = C.black0, gui = 'bold' },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.terminal = {
+gruvbob.terminal = {
     a = { bg = C.blue2, fg = C.black0, gui = 'bold' },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.inactive = {
+gruvbob.inactive = {
     a = { bg = C.gray2, fg = C.black0, gui = 'bold' },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-return nordic
+return gruvbob

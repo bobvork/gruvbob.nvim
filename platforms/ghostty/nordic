@@ -1,5 +1,5 @@
 # Nordic Colorscheme for Ghostty.
-# Based on https://github.com/AlexvZyl/nordic.nvim
+# Based on https://github.com/AlexvZyl/gruvbob.nvim
 # Author: @jorgebef
 
 palette = 0=#191D24

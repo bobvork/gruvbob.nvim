@@ -1,6 +1,6 @@
 # 🌒 Nordic
 
-[![Tests](https://github.com/AlexvZyl/nordic.nvim/workflows/Tests/badge.svg)](https://github.com/AlexvZyl/nordic.nvim/actions?workflow=Tests)
+[![Tests](https://github.com/AlexvZyl/gruvbob.nvim/workflows/Tests/badge.svg)](https://github.com/AlexvZyl/gruvbob.nvim/actions?workflow=Tests)
 
 A Neovim colorscheme based on [Nord](https://www.nordtheme.com/), but Aurora > Frost. The idea behind this colorscheme is to use Nord, but add some darker colors and use Aurora more prominently than Nord themes usually do. This ends up creating a colorscheme that is soft on the eyes.
 
@@ -8,14 +8,14 @@ If there is anything that does not seem right, even if it is a very small highli
 
 # 📷 Showcase
 
-![image](https://github.com/AlexvZyl/nordic.nvim/assets/81622310/2437fc89-733a-4368-b418-88cfe804d5d3)
+![image](https://github.com/AlexvZyl/gruvbob.nvim/assets/81622310/2437fc89-733a-4368-b418-88cfe804d5d3)
 
 **From my dotfiles:**
-![image](https://github.com/AlexvZyl/nordic.nvim/assets/81622310/f8e1fbf6-2498-40a9-b0c1-dfb8fcfd642c)
+![image](https://github.com/AlexvZyl/gruvbob.nvim/assets/81622310/f8e1fbf6-2498-40a9-b0c1-dfb8fcfd642c)
 
 # 🎨 Palette
 
-For the list of colors/palette, see [this file](https://github.com/AlexvZyl/nordic.nvim/blob/main/lua/nordic/colors/nordic.lua). Some extra colors and use cases are generated in [this file](https://github.com/AlexvZyl/nordic.nvim/blob/main/lua/nordic/colors/init.lua).
+For the list of colors/palette, see [this file](https://github.com/AlexvZyl/gruvbob.nvim/blob/main/lua/gruvbob/colors/gruvbob.lua). Some extra colors and use cases are generated in [this file](https://github.com/AlexvZyl/gruvbob.nvim/blob/main/lua/gruvbob/colors/init.lua).
 
 ![image](assets/palette.png)
 
@@ -24,18 +24,18 @@ For the list of colors/palette, see [this file](https://github.com/AlexvZyl/nord
 With [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'AlexvZyl/nordic.nvim'
+use 'AlexvZyl/gruvbob.nvim'
 ```
 
 With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-    'AlexvZyl/nordic.nvim',
+    'AlexvZyl/gruvbob.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-        require('nordic').load()
+        require('gruvbob').load()
     end
 }
 ```
@@ -43,7 +43,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 With [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
+Plug 'AlexvZyl/gruvbob.nvim', { 'branch': 'main' }
 ```
 
 # 🚀 Usage
@@ -51,15 +51,15 @@ Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 Using vim:
 
 ```vim
-colorscheme nordic
+colorscheme gruvbob
 ```
 
 Using lua:
 
 ```lua
-vim.cmd.colorscheme('nordic')
+vim.cmd.colorscheme('gruvbob')
 -- or
-require('nordic').load()
+require('gruvbob').load()
 ```
 
 Using with lualine:
@@ -67,7 +67,7 @@ Using with lualine:
 ```lua
 require('lualine').setup({
     options = {
-        theme = 'nordic'
+        theme = 'gruvbob'
     }
 })
 ```
@@ -75,17 +75,17 @@ require('lualine').setup({
 If you want to use the color palette somewhere else, you can access it with:
 
 ```lua
-local palette = require('nordic.colors')
+local palette = require('gruvbob.colors')
 ```
 > [!WARNING]
-> Please make sure that `require('nordic.colors')` is called *after* setup, otherwise the colors might be wrong for your config.
+> Please make sure that `require('gruvbob.colors')` is called *after* setup, otherwise the colors might be wrong for your config.
 
 # ⚙️ Configuration
 
 Nordic will use the default values, unless `setup` is called. Below is the default configuration.
 
 ```lua
-require('nordic').setup({
+require('gruvbob').setup({
     -- This callback can be used to override the colors used in the base palette.
     on_palette = function(palette) end,
     -- This callback can be used to override the colors used in the extended palette.
@@ -147,7 +147,7 @@ require('nordic').setup({
 
 An example of overriding colors in the base palette:
 ```lua
-require('nordic').setup({
+require('gruvbob').setup({
     on_palette = function(palette)
         palette.black0 = "#BF616A"
         palette.green.base = palette.cyan.base
@@ -162,11 +162,11 @@ require('nordic').setup({
     <summary><b><code>after_palette</code></b></summary>
 &nbsp;
 
-An example of setting the visual selection color (for more values see [this file](https://github.com/AlexvZyl/nordic.nvim/blob/main/lua/nordic/colors/init.lua)):
+An example of setting the visual selection color (for more values see [this file](https://github.com/AlexvZyl/gruvbob.nvim/blob/main/lua/gruvbob/colors/init.lua)):
 ```lua
-require('nordic').setup({
+require('gruvbob').setup({
     after_palette = function(palette)
-        local U = require("nordic.utils")
+        local U = require("gruvbob.utils")
         palette.bg_visual = U.blend(palette.orange.base, palette.bg, 0.15)
     end,
 })
@@ -181,7 +181,7 @@ require('nordic').setup({
 
 An example of overriding the `TelescopePromptTitle` colors:
 ```lua
-require('nordic').setup({
+require('gruvbob').setup({
     on_highlight = function(highlights, palette)
         highlights.TelescopePromptTitle = {
             fg = palette.red.bright,
@@ -197,7 +197,7 @@ require('nordic').setup({
 
 And an example of disabling all italics:
 ```lua
-require('nordic').setup({
+require('gruvbob').setup({
     on_highlight = function(highlights, _palette)
         for _, highlight in pairs(highlights) do
             highlight.italic = false
@@ -211,7 +211,7 @@ require('nordic').setup({
 
 # 🗒️ Supported Plugins and Platforms
 
-For the list of supported plugins, please take a look at [this file](https://github.com/AlexvZyl/nordic.nvim/blob/main/lua/nordic/groups/integrations.lua). For the list of supported platforms, please take a look at [this directory](https://github.com/AlexvZyl/nordic.nvim/tree/main/platforms).
+For the list of supported plugins, please take a look at [this file](https://github.com/AlexvZyl/gruvbob.nvim/blob/main/lua/gruvbob/groups/integrations.lua). For the list of supported platforms, please take a look at [this directory](https://github.com/AlexvZyl/gruvbob.nvim/tree/main/platforms).
 
 I do not personally use all of the platforms and plugins in the list, so if something is not right, or you have a suggestion, please open a PR!
 
@@ -224,7 +224,7 @@ I do not personally use all of the platforms and plugins in the list, so if some
 </br>
 
 <p align="center">
-    <a href="https://github.com/AlexvZyl/nordic.nvim/graphs/contributors">
-        <img src="https://contrib.rocks/image?repo=AlexvZyl/nordic.nvim" />
+    <a href="https://github.com/AlexvZyl/gruvbob.nvim/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=AlexvZyl/gruvbob.nvim" />
     </a>
 </p>

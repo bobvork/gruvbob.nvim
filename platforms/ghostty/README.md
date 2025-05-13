@@ -4,7 +4,7 @@ To use this theme you have 2 options to install it:
 Example:
 
 ```ini
-theme = "/home/jbef/.config/ghostty/nordic"
+theme = "/home/jbef/.config/ghostty/gruvbob"
 ```
 
 - Copy the code directly inside your `ghostty` configuration file, usually located at `$HOME/.config/ghostty/config`
