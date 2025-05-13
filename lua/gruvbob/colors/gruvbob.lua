@@ -9,7 +9,7 @@ local palette = {
 
     -- Blacks. Not in base Nord.
     black0 = '#191D24',
-    black1 = '#1E222A',
+    black1 = '#1e2122',
     -- Slightly darker than bg.  Very useful for certain popups
     black2 = '#222630',
 
