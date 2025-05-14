@@ -36,7 +36,7 @@ function C.build_palette()
         or U.blend(options.cursorline.bg, C.bg, options.cursorline.blend)
 
     -- Borders
-    C.border_fg = (options.bright_border and C.white0) or C.darker_black
+    C.border_fg = (options.bright_border and C.white) or C.darker_black
     C.border_bg = (options.transparent.bg and C.none) or C.bg
 
     -- Foregrounds
@@ -84,7 +84,7 @@ function C.build_palette()
     C.info = C.nord_blue
 
     -- Misc
-    C.comment = C.grey
+    C.comment = C.grey_fg2
 
     -- Modify the palette after generating colors.
     options.after_palette(C)
