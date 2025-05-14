@@ -19,25 +19,25 @@ function M.get()
     G['@comment.info'] = { fg = C.info }
     G['@comment.warning'] = { fg = C.warning }
     G['@comment.todo'] = { fg = C.todo }
-    G['@operator'] = { link = 'Operator' } -- For any operator: `+`, but also `->` and `*` in C.
+    G['@operator'] = { link = 'Operator' }               -- For any operator: `+`, but also `->` and `*` in C.
     --- Punctuation
     G['@punctuation.delimiter'] = { link = 'Delimiter' } -- For delimiters ie: `.`
-    G['@punctuation.bracket'] = { link = '@operator' } -- For brackets and parens.
-    G['@punctuation.special'] = { link = 'Macro' } -- For special punctuation that does not fall in the categories before.
-    G['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true }
+    G['@punctuation.bracket'] = { link = '@operator' }   -- For brackets and parens.
+    G['@punctuation.special'] = { link = 'Macro' }       -- For special punctuation that does not fall in the categories before.
+    G['@punctuation.special.markdown'] = { fg = C.orange, bold = true }
     --- Literals
     G['@string'] = { link = 'String' }
     G['@string.documentation'] = { link = 'String' }
-    G['@string.escape'] = { fg = C.magenta.bright } -- For escape characters within a string.
-    G['@string.regex'] = { fg = C.magenta.bright } -- For regexes.
+    G['@string.escape'] = { fg = C.magenta }       -- For escape characters within a string.
+    G['@string.regex'] = { fg = C.magenta }        -- For regexes.
     --- Functions
-    G['@constructor'] = { link = 'Function' } -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    G['@constructor'] = { link = 'Function' }      -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     G['@parameter'] = { fg = C.fg, italic = true } -- For parameters of a function.
     G['@parameter.builtin'] = { link = 'Builtin' } -- For builtin parameters of a function, e.g. "..." or Smali's pG[1-99]
     --- Keywords
-    G['@keyword'] = { link = 'Keyword' } -- For keywords that don't fall in previous categories.
+    G['@keyword'] = { link = 'Keyword' }           -- For keywords that don't fall in previous categories.
     G['@keyword.conditional'] = { link = 'Conditional' }
-    G['@keyword.coroutine'] = { link = 'Macro' } -- For keywords related to coroutines.
+    G['@keyword.coroutine'] = { link = 'Macro' }   -- For keywords related to coroutines.
     G['@keyword.debug'] = { link = 'Debug' }
     G['@keyword.directive'] = { link = 'PreProc' }
     G['@keyword.directive.define'] = { link = 'Define' }
@@ -55,24 +55,24 @@ function M.get()
     G['@field'] = { link = 'Field' } -- For fields.
     G['@property'] = { link = 'Field' }
     --- Identifiers
-    G['@variable'] = { link = 'Variable' } -- Any variable name that does not have another highlight.
+    G['@variable'] = { link = 'Variable' }        -- Any variable name that does not have another highlight.
     G['@variable.builtin'] = { link = 'Builtin' } -- Variable names that are defined by the languages, like `this` or `self`.
     G['@variable.member'] = { link = 'Field' }
     --- Text
     -- G['@spell'] = { link = 'Comment' } -- This seems to interfere with regular text
     -- G["@text.literal.markdown"] = { }
-    G['@text'] = { link = 'Normal' } -- For strings considered text in a markup language.
+    G['@text'] = { link = 'Normal' }             -- For strings considered text in a markup language.
     G['@text.strong'] = { bold = true }
-    G['@text.emphasis'] = { italic = true } -- For text to be represented with emphasis.
-    G['@text.underline'] = { underline = true } -- For text to be represented with an underline.
+    G['@text.emphasis'] = { italic = true }      -- For text to be represented with emphasis.
+    G['@text.underline'] = { underline = true }  -- For text to be represented with an underline.
     G['@text.strike'] = { strikethrough = true } -- For strikethrough text.
-    G['@text.title'] = { link = 'Title' } -- Text that is part of a title.
-    G['@text.uri'] = { underline = true } -- Any URI like a link or email.
+    G['@text.title'] = { link = 'Title' }        -- Text that is part of a title.
+    G['@text.uri'] = { underline = true }        -- Any URI like a link or email.
     G['@text.literal'] = { link = 'String' }
     G['@text.literal.markdown_inline'] = { bg = C.black2, fg = C.fg }
     G['@text.reference'] = { link = 'Link' }
     G['@text.todo.unchecked'] = { fg = C.blue1 } -- For brackets and parens.
-    G['@text.todo.checked'] = { fg = C.green.bright } -- For brackets and parens.
+    G['@text.todo.checked'] = { fg = C.green }   -- For brackets and parens.
     G['@text.warning'] = { fg = C.warning }
     G['@text.danger'] = { fg = C.error }
     G['@text.diff.add'] = { link = 'DiffAdd' }
@@ -85,18 +85,18 @@ function M.get()
     G['@markup.environment'] = { link = 'Macro' }
     G['@markup.environment.name'] = { link = 'Type' }
     G['@markup.heading'] = { link = 'Title' }
-    G['@markup.heading.1'] = { fg = C.yellow.base, bold = true }
-    G['@markup.heading.2'] = { fg = C.orange.base, bold = true }
-    G['@markup.heading.3'] = { fg = C.magenta.base, bold = true }
-    G['@markup.heading.4'] = { fg = C.green.base }
+    G['@markup.heading.1'] = { fg = C.yellow, bold = true }
+    G['@markup.heading.2'] = { fg = C.orange, bold = true }
+    G['@markup.heading.3'] = { fg = C.magenta, bold = true }
+    G['@markup.heading.4'] = { fg = C.green }
     G['@markup.heading.5'] = { fg = C.blue2, italic = true }
-    G['@markup.heading.6'] = { fg = C.cyan.base, italic = true }
+    G['@markup.heading.6'] = { fg = C.cyan, italic = true }
     G['@markup.italic'] = { italic = true }
     G['@markup.list'] = { link = '@operator' }
     G['@markup.list.checked'] = { link = 'Field' }
-    G['@markup.list.markdown'] = { fg = C.yellow.base, bold = true }
+    G['@markup.list.markdown'] = { fg = C.yellow, bold = true }
     G['@markup.list.unchecked'] = { fg = C.fg }
-    G['@markup.link'] = { fg = C.cyan.base }
+    G['@markup.link'] = { fg = C.cyan }
     G['@markup.link.label'] = { link = 'SpecialChar' }
     G['@markup.link.label.symbol'] = { link = 'Identifier' }
     G['@markup.link.url'] = { link = 'Underlined' }
@@ -152,10 +152,10 @@ function M.get()
     G['@diff.delta'] = { link = 'DiffChange' }
     G['@character'] = { link = 'Character' }
     G['@character.special'] = { link = 'SpecialChar' }
-    G['@string.special'] = { fg = C.yellow.base } -- For escape characters within a string.
-    G['@tag'] = { fg = C.blue1 } -- Tags like html tag names.
-    G['@tag.delimiter'] = { fg = C.fg } -- Tag delimiter like `<` `>` `/`
-    G['@tag.attribute'] = { fg = C.yellow.base } -- Tag attribute like `id` `class`
+    G['@string.special'] = { fg = C.yellow } -- For escape characters within a string.
+    G['@tag'] = { fg = C.blue1 }             -- Tags like html tag names.
+    G['@tag.delimiter'] = { fg = C.fg }      -- Tag delimiter like `<` `>` `/`
+    G['@tag.attribute'] = { fg = C.yellow }  -- Tag attribute like `id` `class`
     G['@constant'] = { link = 'Constant' }
     G['@number'] = { link = 'Constant' }
     G['@float'] = { link = 'Constant' }
@@ -167,7 +167,7 @@ function M.get()
     G['@class'] = { link = 'Keyword' }
     G['@include'] = { link = 'Include' }
     G['@macro'] = { link = 'Macro' }
-    G['@module'] = { fg = C.yellow.base }
+    G['@module'] = { fg = C.yellow }
     G['@module.builtin'] = { link = 'Builtin' }
     G['@preproc'] = { link = 'Macro' }
     G['@attribute'] = { link = 'Macro' }
@@ -179,8 +179,8 @@ function M.get()
     G['@method.call'] = { link = 'Function' }
     G['@function.call'] = { link = 'Function' }
     G['@function.builtin'] = { link = 'Function' }
-    G['@property.cpp'] = { fg = C.cyan.base }
-    G['@namespace'] = { fg = C.yellow.dim }
+    G['@property.cpp'] = { fg = C.cyan }
+    G['@namespace'] = { fg = C.yellow }
     G['@type'] = { link = 'Type' }
     G['@type.definition'] = { link = 'Type' }
     G['@type.qualifier'] = { link = 'Keyword' }
