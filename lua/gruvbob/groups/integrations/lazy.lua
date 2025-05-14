@@ -5,13 +5,13 @@ function M.get()
 
     local G = {}
 
-    G.LazyH1 = { fg = C.yellow.base, bold = true }
+    G.LazyH1 = { fg = C.yellow, bold = true }
     G.LazyButtonActive = { link = 'LazyH1' }
     G.LazyButton = { fg = C.white0 }
-    G.LazySpecial = { fg = C.yellow.base }
-    G.LazyProgressDone = { fg = C.green.bright }
-    G.LazyProgressTodo = { fg = C.gray4 }
-    G.LazyCommitType = { fg = C.yellow.base }
+    G.LazySpecial = { fg = C.yellow }
+    G.LazyProgressDone = { fg = C.green }
+    G.LazyProgressTodo = { fg = C.grey }
+    G.LazyCommitType = { fg = C.yellow }
 
     return G
 end

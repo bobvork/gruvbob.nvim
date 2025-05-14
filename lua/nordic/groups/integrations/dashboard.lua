@@ -5,19 +5,19 @@ function M.get()
 
     local G = {}
 
-    G.DashboardHeader = { fg = C.yellow.base, bold = true }
-    G.DashboardFooter = { fg = C.cyan.base }
-    G.DashboardCenter = { fg = C.green.base }
-    G.DashboardShortCut = { fg = C.gray4, bold = true }
-    G.DashboardProjectTitle = { fg = C.orange.base, bold = true }
+    G.DashboardHeader = { fg = C.yellow, bold = true }
+    G.DashboardFooter = { fg = C.cyan }
+    G.DashboardCenter = { fg = C.green }
+    G.DashboardShortCut = { fg = C.grey, bold = true }
+    G.DashboardProjectTitle = { fg = C.orange, bold = true }
     G.DashboardProjectTitleIcon = { link = 'DashboardProjectTitle' }
-    G.DashboardProjectIcon = { fg = C.magenta.bright }
+    G.DashboardProjectIcon = { fg = C.magenta }
     G.DashboardMruTitle = { link = 'DashboardProjectTitle' }
     G.DashboardMruIcon = {}
     G.DashboardFiles = { fg = C.fg }
-    G.DashboardDesc = { fg = C.green.base }
-    G.DashboardKey = { fg = C.red.base, bold = true }
-    G.DashboardIcon = { fg = C.green.base }
+    G.DashboardDesc = { fg = C.green }
+    G.DashboardKey = { fg = C.red, bold = true }
+    G.DashboardIcon = { fg = C.green }
 
     return G
 end
