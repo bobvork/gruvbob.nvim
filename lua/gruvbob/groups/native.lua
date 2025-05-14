@@ -34,7 +34,7 @@ function M.get_groups()
     G.Repeat = { link = 'Keyword' }                          --   for, do, while, etc.
     G.Label = { link = 'Keyword' }                           --    case, default, etc.
     G.Operator = { fg = C.fg }                               -- "sizeof", "+", "*", etc.
-    G.Macro = { fg = C.red }                                 -- same as Define
+    G.Macro = { fg = C.foo }                                 -- same as Define
     G.Exception = { link = 'Macro' }                         --  try, catch, throw
     G.PreProc = { link = 'Macro' }                           -- (preferred) generic preprocessor
     G.Include = { link = 'Macro' }                           --  preprocessor #include
