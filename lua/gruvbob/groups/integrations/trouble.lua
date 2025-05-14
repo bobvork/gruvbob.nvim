@@ -7,10 +7,10 @@ function M.get()
 
     G.TroubleNormal = { bg = C.bg_float }
     G.TroubleText = { fg = C.fg }
-    G.TroubleCount = { fg = C.white1, bg = C.gray2 }
-    G.TroubleIndent = { fg = C.gray1 }
-    G.TroubleFile = { fg = C.cyan.bright }
-    G.TroubleFoldIcon = { fg = C.gray1 }
+    G.TroubleCount = { fg = C.white, bg = C.grey }
+    G.TroubleIndent = { fg = C.grey }
+    G.TroubleFile = { fg = C.cyan }
+    G.TroubleFoldIcon = { fg = C.grey }
 
     return G
 end
