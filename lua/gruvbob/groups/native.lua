@@ -26,26 +26,26 @@ function M.get_groups()
     G.Field = { fg = C.cyan }
     G.Title = { fg = C.yellow }
     G.Builtin = { fg = C.foo }
-    G.Identifier = { fg = C.fg }                          -- (preferred) any variable name
-    G.Function = { fg = C.blue }                          -- function name (also: methods for classes)
-    G.Keyword = { fg = C.orange, bold = O.bold_keywords } --  any other keyword
-    G.Statement = { link = 'Keyword' }                    -- (preferred) any statement
-    G.Conditional = { link = 'Keyword' }                  --  if, then, else, endif, switch, etc.
-    G.Repeat = { link = 'Keyword' }                       --   for, do, while, etc.
-    G.Label = { link = 'Keyword' }                        --    case, default, etc.
-    G.Operator = { fg = C.fg }                            -- "sizeof", "+", "*", etc.
-    G.Macro = { fg = C.red }                              -- same as Define
-    G.Exception = { link = 'Macro' }                      --  try, catch, throw
-    G.PreProc = { link = 'Macro' }                        -- (preferred) generic preprocessor
-    G.Include = { link = 'Macro' }                        --  preprocessor #include
-    G.Define = { link = 'Macro' }                         --   preprocessor #define
-    G.PreCondit = { link = 'Macro' }                      --  preprocessor #if, #else, #endif, etc.
+    G.Identifier = { fg = C.fg }                             -- (preferred) any variable name
+    G.Function = { fg = C.blue }                             -- function name (also: methods for classes)
+    G.Keyword = { fg = C.baby_pink, bold = O.bold_keywords } --  any other keyword
+    G.Statement = { link = 'Keyword' }                       -- (preferred) any statement
+    G.Conditional = { link = 'Keyword' }                     --  if, then, else, endif, switch, etc.
+    G.Repeat = { link = 'Keyword' }                          --   for, do, while, etc.
+    G.Label = { link = 'Keyword' }                           --    case, default, etc.
+    G.Operator = { fg = C.fg }                               -- "sizeof", "+", "*", etc.
+    G.Macro = { fg = C.red }                                 -- same as Define
+    G.Exception = { link = 'Macro' }                         --  try, catch, throw
+    G.PreProc = { link = 'Macro' }                           -- (preferred) generic preprocessor
+    G.Include = { link = 'Macro' }                           --  preprocessor #include
+    G.Define = { link = 'Macro' }                            --   preprocessor #define
+    G.PreCondit = { link = 'Macro' }                         --  preprocessor #if, #else, #endif, etc.
     G.Comment = { fg = C.comment, italic = O.italic_comments }
-    G.Type = { fg = C.purple }                            -- (preferred) int, long, char, etc.
-    G.StorageClass = { link = 'Keyword' }                 -- static, register, volatile, etc.
-    G.Structure = { link = 'Type' }                       --  struct, union, enum, etc.
-    G.Typedef = { link = 'Type' }                         --  A typedef
-    G.Special = { fg = C.white }                          -- (preferred) any special symbol
+    G.Type = { fg = C.purple }                               -- (preferred) int, long, char, etc.
+    G.StorageClass = { link = 'Keyword' }                    -- static, register, volatile, etc.
+    G.Structure = { link = 'Type' }                          --  struct, union, enum, etc.
+    G.Typedef = { link = 'Type' }                            --  A typedef
+    G.Special = { fg = C.white }                             -- (preferred) any special symbol
     -- SpecialChar   = { } --  special character in a constant
     -- Tag           = { } --    you can use CTRL-] on this
     G.Delimiter = { italic = true, fg = C.light_grey } --  character that needs attention
