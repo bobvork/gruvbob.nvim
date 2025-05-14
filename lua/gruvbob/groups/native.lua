@@ -40,7 +40,7 @@ function M.get_groups()
     G.Include = { link = 'Macro' }                        --  preprocessor #include
     G.Define = { link = 'Macro' }                         --   preprocessor #define
     G.PreCondit = { link = 'Macro' }                      --  preprocessor #if, #else, #endif, etc.
-    G.Comment = { fg = C.comment, italic = O.italic_comments }
+    G.Comment = { fg = C.foo, italic = O.italic_comments }
     G.Type = { fg = C.purple }                            -- (preferred) int, long, char, etc.
     G.StorageClass = { link = 'Keyword' }                 -- static, register, volatile, etc.
     G.Structure = { link = 'Type' }                       --  struct, union, enum, etc.
