@@ -27,6 +27,7 @@ local palette = {
 
     white = "#c7b89d",
     white_bright = "#d6c8af",
+    white_brighter = "#f0e6d4",
     darker_black = "#1a1d1e",
     black = "#1e2122", --  nvim bg
     black2 = "#242728",

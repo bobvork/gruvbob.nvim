@@ -45,7 +45,7 @@ function C.build_palette()
     C.fg_dark = C.white0
     C.fg_sidebar = C.grey_fg
     C.fg_fold = C.fg
-    C.fg_selected = C.fg_bright
+    C.fg_selected = C.fg_brighter
 
     -- Floating windows
     C.bg_float = (options.transparent.float and C.none) or ((options.swap_backgrounds and C.black2) or C.black)

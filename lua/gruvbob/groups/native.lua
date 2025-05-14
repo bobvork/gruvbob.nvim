@@ -45,7 +45,7 @@ function M.get_groups()
     G.StorageClass = { link = 'Keyword' }                 -- static, register, volatile, etc.
     G.Structure = { link = 'Type' }                       --  struct, union, enum, etc.
     G.Typedef = { link = 'Type' }                         --  A typedef
-    G.Special = { fg = C.white_bright }                   -- (preferred) any special symbol
+    G.Special = { fg = C.white }                          -- (preferred) any special symbol
     -- SpecialChar   = { } --  special character in a constant
     -- Tag           = { } --    you can use CTRL-] on this
     G.Delimiter = { italic = true, fg = C.light_grey } --  character that needs attention
@@ -95,10 +95,10 @@ function M.get_groups()
     G.LspReferenceText = { bg = C.fg_gutter }                                 -- used for highlighting "text" references
     G.LspReferenceRead = { bg = C.fg_gutter }                                 -- used for highlighting "read" references
     G.LspReferenceWrite = { bg = C.fg_gutter }                                -- used for highlighting "write" references
-    G.DiagnosticError = { fg = C.error }                                      -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    G.DiagnosticWarn = { fg = C.warning }                                     -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    G.DiagnosticInfo = { fg = C.info }                                        -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    G.DiagnosticHint = { fg = C.hint }                                        -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    G.DiagnosticError = { fg = C.error }                                      -- Used as the highlight group. Other Diagnostic highlights link to this by default
+    G.DiagnosticWarn = { fg = C.warning }                                     -- Used as the highlight group. Other Diagnostic highlights link to this by default
+    G.DiagnosticInfo = { fg = C.info }                                        -- Used as the highlight group. Other Diagnostic highlights link to this by default
+    G.DiagnosticHint = { fg = C.hint }                                        -- Used as the highlight group. Other Diagnostic highlights link to this by default
     G.DiagnosticVirtualTextError = { bg = C.grey, fg = C.error, bold = true } -- Used for "Error" diagnostic virtual text
     G.DiagnosticVirtualTextWarn = { bg = C.grey, fg = C.warning }             -- Used for "Warning" diagnostic virtual text
     G.DiagnosticVirtualTextWarning = { bg = C.grey, fg = C.warning }          -- Used for "Warning" diagnostic virtual text
@@ -129,7 +129,7 @@ function M.get_groups()
     G.TreeGitNew = { fg = C.grey_fg }
     G.TreeGitDeleted = { fg = C.grey_fg }
     G.TreeGitStaged = { fg = C.grey_fg }
-    G.TreeGitUntracked = { fg = C.orange.base }
+    G.TreeGitUntracked = { fg = C.orange }
     G.TreeTitleBar = { link = 'WinBar' }
     G.TreeFloatBorder = { link = 'FloatBorder' }
     G.TreeCursorLine = { bg = C.bg_selected }
@@ -193,8 +193,8 @@ function M.get_groups()
     G.StatusLineNC = { fg = C.grey_fg, bg = C.bg_statusline }                     -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     G.TabLine = { bg = C.bg_statusline, fg = C.fg }                               -- tab pages line, not active tab page label
     G.TabLineFill = { bg = C.darker_black, fg = C.none }                          -- tab pages line, where there are no labels
-    G.TabLineSel = { fg = C.fg_bright, bg = C.bg }                                -- tab pages line, active tab page label
-    G.Title = { fg = C.fg_bright, bold = true }                                   -- titles for output from ":set all", ":autocmd" etc.
+    G.TabLineSel = { fg = C.fg, bg = C.bg }                                       -- tab pages line, active tab page label
+    G.Title = { fg = C.fg, bold = true }                                          -- titles for output from ":set all", ":autocmd" etc.
     G.Visual = { bg = C.bg_visual, bold = O.cursorline.bold }                     -- Visual mode selection
     G.VisualNOS = { bg = C.bg_visual }                                            -- Visual mode selection when vim is "Not Owning the Selection".
     G.WarningMsg = { fg = C.warning }                                             -- warning messages
@@ -213,7 +213,7 @@ function M.get_groups()
     G.diffRemoved = { fg = C.git.delete }
     G.diffChanged = { fg = C.git.change }
     G.diffOldFile = { fg = C.fg }
-    G.diffNewFile = { fg = C.green.base }
+    G.diffNewFile = { fg = C.green }
     G.diffFile = { fg = C.fg }
     G.diffLine = {}
     G.diffIndexLine = {}
