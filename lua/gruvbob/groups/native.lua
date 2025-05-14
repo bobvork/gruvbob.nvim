@@ -14,41 +14,41 @@ function M.get_groups()
 
     -- SYNTAX
 
-    G.Constant = { fg = C.orange }   -- (preferred) any constant
-    G.Number = { link = 'Constant' } --   a number constant: 234  0xff
-    G.Boolean = { link = 'Number' }  --  a boolean constant: TRUE  false
-    G.Float = { link = 'Number' }    --    a floating point constant: 2.3e10
+    G.Constant = { fg = C.orange }      -- (preferred) any constant
+    G.Number = { link = 'Constant' }    --   a number constant: 234  0xff
+    G.Boolean = { link = 'Number' }     --  a boolean constant: TRUE  false
+    G.Float = { link = 'Number' }       --    a floating point constant: 2.3e10
     G.None = { fg = C.none, bg = C.none }
-    G.String = { fg = C.green }      --   a string constant: "this is a string"
-    G.Character = { fg = C.green }   --  a character constant: 'c', '\n'
-    G.Variable = { fg = C.fg }
+    G.String = { fg = C.vibrant_green } --   a string constant: "this is a string"
+    G.Character = { fg = C.green }      --  a character constant: 'c', '\n'
+    G.Variable = { fg = C.cyan }
     G.Namespace = { fg = C.yellow }
     G.Field = { fg = C.cyan }
     G.Title = { fg = C.yellow }
     G.Builtin = { fg = C.foo }
-    G.Identifier = { fg = C.fg }                             -- (preferred) any variable name
-    G.Function = { fg = C.blue }                             -- function name (also: methods for classes)
+    G.Identifier = { fg = C.red }                            -- (preferred) any variable name
+    G.Function = { fg = C.cyan }                             -- function name (also: methods for classes)
     G.Keyword = { fg = C.baby_pink, bold = O.bold_keywords } --  any other keyword
     G.Statement = { link = 'Keyword' }                       -- (preferred) any statement
     G.Conditional = { link = 'Keyword' }                     --  if, then, else, endif, switch, etc.
     G.Repeat = { link = 'Keyword' }                          --   for, do, while, etc.
     G.Label = { link = 'Keyword' }                           --    case, default, etc.
-    G.Operator = { fg = C.fg }                               -- "sizeof", "+", "*", etc.
-    G.Macro = { fg = C.foo }                                 -- same as Define
+    G.Operator = { fg = C.white_bright }                     -- "sizeof", "+", "*", etc.
+    G.Macro = { fg = C.cyan }                                -- same as Define
     G.Exception = { link = 'Macro' }                         --  try, catch, throw
     G.PreProc = { link = 'Macro' }                           -- (preferred) generic preprocessor
     G.Include = { link = 'Macro' }                           --  preprocessor #include
     G.Define = { link = 'Macro' }                            --   preprocessor #define
     G.PreCondit = { link = 'Macro' }                         --  preprocessor #if, #else, #endif, etc.
     G.Comment = { fg = C.comment, italic = O.italic_comments }
-    G.Type = { fg = C.purple }                               -- (preferred) int, long, char, etc.
+    G.Type = { fg = C.yellow }                               -- (preferred) int, long, char, etc.
     G.StorageClass = { link = 'Keyword' }                    -- static, register, volatile, etc.
     G.Structure = { link = 'Type' }                          --  struct, union, enum, etc.
-    G.Typedef = { link = 'Type' }                            --  A typedef
+    G.Typedef = { fg = C.purple }                            --  A typedef
     G.Special = { fg = C.white }                             -- (preferred) any special symbol
     -- SpecialChar   = { } --  special character in a constant
     -- Tag           = { } --    you can use CTRL-] on this
-    G.Delimiter = { italic = true, fg = C.light_grey } --  character that needs attention
+    G.Delimiter = { italic = true, fg = C.orange } --  character that needs attention
     -- SpecialComment= { } -- special things inside a comment
     -- Debug         = { } --    debugging statements
     G.Underlined = { underline = true } -- (preferred) text that stands out, HTML links

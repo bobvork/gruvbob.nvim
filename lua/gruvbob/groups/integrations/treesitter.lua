@@ -71,8 +71,8 @@ function M.get()
     G['@text.literal'] = { link = 'String' }
     G['@text.literal.markdown_inline'] = { bg = C.black2, fg = C.fg }
     G['@text.reference'] = { link = 'Link' }
-    G['@text.todo.unchecked'] = { fg = C.blue1 } -- For brackets and parens.
-    G['@text.todo.checked'] = { fg = C.green }   -- For brackets and parens.
+    G['@text.todo.unchecked'] = { fg = C.blue } -- For brackets and parens.
+    G['@text.todo.checked'] = { fg = C.green }  -- For brackets and parens.
     G['@text.warning'] = { fg = C.warning }
     G['@text.danger'] = { fg = C.error }
     G['@text.diff.add'] = { link = 'DiffAdd' }
@@ -89,7 +89,7 @@ function M.get()
     G['@markup.heading.2'] = { fg = C.orange, bold = true }
     G['@markup.heading.3'] = { fg = C.magenta, bold = true }
     G['@markup.heading.4'] = { fg = C.green }
-    G['@markup.heading.5'] = { fg = C.blue2, italic = true }
+    G['@markup.heading.5'] = { fg = C.blue, italic = true }
     G['@markup.heading.6'] = { fg = C.cyan, italic = true }
     G['@markup.italic'] = { italic = true }
     G['@markup.list'] = { link = '@operator' }
@@ -107,9 +107,9 @@ function M.get()
     G['@markup.strikethrough'] = { strikethrough = true }
     G['@markup.underline'] = { underline = true }
     -- TSX
-    G['@tag.tsx'] = { fg = C.blue1 }
-    G['@constructor.tsx'] = { fg = C.blue1 }
-    G['@tag.delimiter.tsx'] = { fg = C.blue1 }
+    G['@tag.tsx'] = { fg = C.blue }
+    G['@constructor.tsx'] = { fg = C.blue }
+    G['@tag.delimiter.tsx'] = { fg = C.blue }
     --- LSP semantic token highlights for typescriptreact
     G['@lsp.type.interface.typescriptreact'] = { link = 'Type' }
     --LSP Semantic Token Groups
@@ -153,8 +153,8 @@ function M.get()
     G['@character'] = { link = 'Character' }
     G['@character.special'] = { link = 'SpecialChar' }
     G['@string.special'] = { fg = C.yellow } -- For escape characters within a string.
-    G['@tag'] = { fg = C.blue1 }             -- Tags like html tag names.
-    G['@tag.delimiter'] = { fg = C.fg }      -- Tag delimiter like `<` `>` `/`
+    G['@tag'] = { fg = C.cyan }              -- Tags like html tag names.
+    G['@tag.delimiter'] = { fg = C.cyan }    -- Tag delimiter like `<` `>` `/`
     G['@tag.attribute'] = { fg = C.yellow }  -- Tag attribute like `id` `class`
     G['@constant'] = { link = 'Constant' }
     G['@number'] = { link = 'Constant' }

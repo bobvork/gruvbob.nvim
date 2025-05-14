@@ -19,7 +19,7 @@ function C.build_palette()
     C.white0 = C.white
 
     -- Backgrounds
-    C.bg = (options.transparent.bg and C.none) or ((options.swap_backgrounds and C.black) or C.black2)
+    C.bg = (options.transparent.bg and C.none) or ((options.swap_backgrounds and C.black) or C.black)
     C.bg_dark = (options.transparent.bg and C.none) or C.black
     C.bg_sidebar = (options.transparent.bg and C.none) or C.bg
     C.bg_statusline = C.black
@@ -84,7 +84,7 @@ function C.build_palette()
     C.info = C.nord_blue
 
     -- Misc
-    C.comment = C.grey_fg2
+    C.comment = C.light_grey
 
     -- Modify the palette after generating colors.
     options.after_palette(C)
