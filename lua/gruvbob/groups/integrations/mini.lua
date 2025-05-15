@@ -20,7 +20,7 @@ function M.get()
     G.MiniIconsBlue             = { fg = LC.blue }
     G.MiniIconsCyan             = { fg = LC.cyan }
     G.MiniIconsGreen            = { fg = LC.green }
-    G.MiniIconsGrey             = { fg = LC.fg0 }
+    G.MiniIconsGrey             = { fg = LC.fg }
     G.MiniIconsOrange           = { fg = LC.orange }
     G.MiniIconsPurple           = { fg = LC.magenta }
     G.MiniIconsRed              = { fg = LC.red }

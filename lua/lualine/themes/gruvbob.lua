@@ -5,7 +5,7 @@ local gruvbob = {}
 gruvbob.normal = {
     a = { bg = C.orange, fg = C.black, gui = 'bold' },
     b = { bg = C.bg, fg = C.cyan },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    c = { bg = C.bg_statusline, fg = C.light_grey },
 }
 
 gruvbob.insert = {
@@ -39,9 +39,9 @@ gruvbob.terminal = {
 }
 
 gruvbob.inactive = {
-    a = { bg = C.black, fg = C.black, gui = 'bold' },
-    b = { bg = C.bg, fg = C.cyan },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    a = { bg = C.none, fg = C.grey, gui = 'bold' },
+    b = { bg = C.none, fg = C.grey },
+    c = { bg = C.none, fg = C.grey },
 }
 
 return gruvbob
