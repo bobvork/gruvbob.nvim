@@ -6,24 +6,24 @@ function M.get()
 
     local G = {}
 
-    G.NoiceLspProgressTitle = { fg = C.yellow.base, bg = C.bg, bold = true }
-    G.NoiceLspProgressClient = { fg = C.gray4, bg = C.bg }
-    G.NoiceLspProgressSpinner = { fg = C.cyan.bright, bg = C.bg }
-    G.NoiceFormatProgressDone = { bg = C.green.bright, fg = C.black0 }
-    G.NoiceFormatProgressTodo = { bg = C.gray5, fg = C.black0 }
-    G.NoiceCmdline = { bg = C.bg_dark, fg = C.fg }
-    G.NoiceCmdlineIcon = { bg = C.bg_float, fg = C.yellow.base }
-    G.NoiceCmdlineIconSearch = { bg = C.bg_dark, fg = C.yellow.base }
-    G.NoicePopupBorder = { fg = C.black0, bg = C.bg_float }
+    G.NoiceLspProgressTitle = { fg = C.yellow, bg = C.bg, bold = true }
+    G.NoiceLspProgressClient = { fg = C.grey, bg = C.bg }
+    G.NoiceLspProgressSpinner = { fg = C.cyan, bg = C.bg }
+    G.NoiceFormatProgressDone = { bg = C.green, fg = C.black }
+    G.NoiceFormatProgressTodo = { bg = C.light_grey, fg = C.black }
+    G.NoiceCmdline = { bg = C.black2, fg = C.fg }
+    G.NoiceCmdlineIcon = { bg = C.bg_float, fg = C.yellow }
+    G.NoiceCmdlineIconSearch = { bg = C.bg_dark, fg = C.yellow }
+    G.NoicePopupBorder = { fg = C.black2, bg = C.bg_float }
     G.NoiceCmdlinePopupBorder = { link = 'NoicePopupBorder' }
     G.NoiceCmdlinePopupBorderSearch = { link = 'NoicePopupBorder' }
     G.NoiceCmdlinePopup = { bg = C.bg_float }
 
     if O.noice.style == 'classic' then
-        G.NoiceCmdline = { bg = C.bg, fg = C.cyan.base }
+        G.NoiceCmdline = { bg = C.bg, fg = C.cyan }
         G.NoiceCmdlinePopup = { bg = C.bg }
-        G.NoicePopupBorder = { bg = C.bg, fg = C.cyan.base }
-        G.NoiceCmdlineIcon = { bg = C.bg, fg = C.yellow.bright }
+        G.NoicePopupBorder = { bg = C.bg, fg = C.cyan }
+        G.NoiceCmdlineIcon = { bg = C.bg, fg = C.yellow }
     end
 
     return G

@@ -56,6 +56,7 @@ local defaults = {
         nvim_dap = true,
         nvim_tree = true,
         rainbow_delimiters = true,
+        snacks = true,
         telescope = true,
         treesitter = true,
         treesitter_context = true,

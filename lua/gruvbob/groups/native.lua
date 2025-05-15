@@ -21,11 +21,11 @@ function M.get_groups()
     G.None = { fg = C.none, bg = C.none }
     G.String = { fg = C.vibrant_green } --   a string constant: "this is a string"
     G.Character = { fg = C.green }      --  a character constant: 'c', '\n'
-    G.Variable = { fg = C.cyan }
+    G.Variable = { fg = C.fg }
     G.Namespace = { fg = C.yellow }
     G.Field = { fg = C.cyan }
     G.Title = { fg = C.yellow }
-    G.Builtin = { fg = C.foo }
+    G.Builtin = { fg = C.fg }
     G.Identifier = { fg = C.red }                            -- (preferred) any variable name
     G.Function = { fg = C.cyan }                             -- function name (also: methods for classes)
     G.Keyword = { fg = C.baby_pink, bold = O.bold_keywords } --  any other keyword
@@ -33,8 +33,8 @@ function M.get_groups()
     G.Conditional = { link = 'Keyword' }                     --  if, then, else, endif, switch, etc.
     G.Repeat = { link = 'Keyword' }                          --   for, do, while, etc.
     G.Label = { link = 'Keyword' }                           --    case, default, etc.
-    G.Operator = { fg = C.white_bright }                     -- "sizeof", "+", "*", etc.
-    G.Macro = { fg = C.cyan }                                -- same as Define
+    G.Operator = { fg = C.cyan }                             -- "sizeof", "+", "*", etc.
+    G.Macro = { fg = C.red }                                 -- same as Define
     G.Exception = { link = 'Macro' }                         --  try, catch, throw
     G.PreProc = { link = 'Macro' }                           -- (preferred) generic preprocessor
     G.Include = { link = 'Macro' }                           --  preprocessor #include
@@ -119,9 +119,9 @@ function M.get_groups()
     G.TreeNormal = { fg = C.fg, bg = C.bg }
     G.TreeNormalNC = { fg = C.fg, bg = C.bg }
     G.TreeRootName = { fg = C.fg, bold = true }
-    G.TreeFileIcon = { fg = C.blue }
+    -- G.TreeFileIcon = { fg = C.blue }
     G.TreeFileNameOpened = { fg = C.fg }
-    G.TreeSpecialFile = { fg = C.magenta }
+    G.TreeSpecialFile = { fg = C.baby_pink }
     G.TreeGitConflict = { fg = C.red }
     G.TreeGitModified = { fg = C.git.change }
     G.TreeGitDirty = { fg = C.grey_fg }
@@ -134,7 +134,7 @@ function M.get_groups()
     G.TreeFloatBorder = { link = 'FloatBorder' }
     G.TreeCursorLine = { bg = C.bg_selected }
     G.TreeCursor = { bg = C.none, fg = C.none }
-    G.TreeFolderIcon = { fg = C.yellow }
+    -- G.TreeFolderIcon = { fg = C.yellow }
     G.TreeIndentMarker = { fg = C.grey_fg }
     G.TreeSymlink = { fg = C.blue }
     G.TreeFolderName = { fg = C.blue }

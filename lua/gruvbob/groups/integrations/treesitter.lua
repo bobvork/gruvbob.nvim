@@ -32,7 +32,7 @@ function M.get()
     G['@string.regex'] = { fg = C.magenta }        -- For regexes.
     --- Functions
     G['@constructor'] = { link = 'Function' }      -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    G['@parameter'] = { fg = C.fg, italic = true } -- For parameters of a function.
+    G['@parameter'] = { fg = C.orange }            -- For parameters of a function.
     G['@parameter.builtin'] = { link = 'Builtin' } -- For builtin parameters of a function, e.g. "..." or Smali's pG[1-99]
     --- Keywords
     G['@keyword'] = { link = 'Keyword' }           -- For keywords that don't fall in previous categories.
@@ -153,9 +153,9 @@ function M.get()
     G['@character'] = { link = 'Character' }
     G['@character.special'] = { link = 'SpecialChar' }
     G['@string.special'] = { fg = C.yellow } -- For escape characters within a string.
-    G['@tag'] = { fg = C.cyan }              -- Tags like html tag names.
+    G['@tag'] = { fg = C.blue }              -- Tags like html tag names.
     G['@tag.delimiter'] = { fg = C.cyan }    -- Tag delimiter like `<` `>` `/`
-    G['@tag.attribute'] = { fg = C.yellow }  -- Tag attribute like `id` `class`
+    G['@tag.attribute'] = { fg = C.cyan }    -- Tag attribute like `id` `class`
     G['@constant'] = { link = 'Constant' }
     G['@number'] = { link = 'Constant' }
     G['@float'] = { link = 'Constant' }

@@ -5,13 +5,13 @@ function M.get()
 
     local G = {}
 
-    G.DashboardHeader = { fg = C.yellow, bold = true }
+    G.DashboardHeader = { fg = C.sun, bold = true }
     G.DashboardFooter = { fg = C.cyan }
     G.DashboardCenter = { fg = C.green }
     G.DashboardShortCut = { fg = C.grey, bold = true }
     G.DashboardProjectTitle = { fg = C.orange, bold = true }
     G.DashboardProjectTitleIcon = { link = 'DashboardProjectTitle' }
-    G.DashboardProjectIcon = { fg = C.magenta }
+    G.DashboardProjectIcon = { fg = C.pink }
     G.DashboardMruTitle = { link = 'DashboardProjectTitle' }
     G.DashboardMruIcon = {}
     G.DashboardFiles = { fg = C.fg }

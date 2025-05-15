@@ -23,11 +23,11 @@ function C.build_palette()
     C.bg_dark = (options.transparent.bg and C.none) or C.black
     C.bg_sidebar = (options.transparent.bg and C.none) or C.bg
     C.bg_statusline = C.black
-    C.bg_fold = C.grey2
+    C.bg_fold = C.grey
 
     -- Cursorline Background
     if options.cursorline.theme == 'light' then
-        options.cursorline.bg = C.one_bg
+        options.cursorline.bg = C.one_bg2
     else
         options.cursorline.bg = C.darker_black
     end
@@ -45,17 +45,17 @@ function C.build_palette()
     C.fg_dark = C.white0
     C.fg_sidebar = C.grey_fg
     C.fg_fold = C.fg
-    C.fg_selected = C.fg_brighter
+    C.fg_selected = C.white_brighter
 
     -- Floating windows
-    C.bg_float = (options.transparent.float and C.none) or ((options.swap_backgrounds and C.black2) or C.black)
+    C.bg_float = (options.transparent.float and C.none) or ((options.swap_backgrounds and C.black2) or C.black2)
     C.fg_float = C.fg
     C.bg_float_border = C.bg_float
     C.fg_float_border = C.border_fg
 
     -- Popups
     C.bg_popup = C.bg_float
-    C.bg_selected = C.one
+    C.bg_selected = C.grey
     C.fg_popup = C.fg
     C.bg_popup_border = C.bg
     C.fg_popup_border = C.border_fg
