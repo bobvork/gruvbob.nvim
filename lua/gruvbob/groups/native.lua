@@ -165,7 +165,7 @@ function M.get_groups()
     G.LineNr = { fg = C.fg_sidebar }                               -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     G.MatchParen = { underline = true, bold = true, sp = C.white } -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     G.ModeMsg = { fg = C.fg, bold = true }                         -- 'showmode' message (e.g., "-- INSERT -- ")
-    G.MsgArea = { fg = C.fg }                                      -- Area for messages and cmdline
+    G.MsgArea = { fg = C.fg, bg = C.bg_dark }                      -- Area for messages and cmdline
     -- MsgSeparator= { } -- Separator for scrolled messages, `msgsep` flag of 'display'
     G.MoreMsg = { fg = C.blue }                                    -- |more-prompt|
     G.NonText = { fg = C.grey_fg }                                 -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
@@ -194,7 +194,7 @@ function M.get_groups()
     G.TabLine = { bg = C.bg_statusline, fg = C.fg }                               -- tab pages line, not active tab page label
     G.TabLineFill = { bg = C.darker_black, fg = C.none }                          -- tab pages line, where there are no labels
     G.TabLineSel = { fg = C.fg, bg = C.bg }                                       -- tab pages line, active tab page label
-    G.Title = { fg = C.fg, bold = true }                                          -- titles for output from ":set all", ":autocmd" etc.
+    G.Title = { fg = C.white, bold = true }                                       -- titles for output from ":set all", ":autocmd" etc.
     G.Visual = { bg = C.bg_visual, bold = O.cursorline.bold }                     -- Visual mode selection
     G.VisualNOS = { bg = C.bg_visual }                                            -- Visual mode selection when vim is "Not Owning the Selection".
     G.WarningMsg = { fg = C.warning }                                             -- warning messages

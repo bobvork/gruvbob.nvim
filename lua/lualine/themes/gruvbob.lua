@@ -6,36 +6,42 @@ gruvbob.normal = {
     a = { bg = C.orange, fg = C.black, gui = 'bold' },
     b = { bg = C.bg, fg = C.cyan },
     c = { bg = C.bg_statusline, fg = C.light_grey },
+    z = { bg = C.bg, fg = C.orange },
 }
 
 gruvbob.insert = {
     a = { bg = C.green, fg = C.black, gui = 'bold' },
     b = { bg = C.bg, fg = C.cyan },
     c = { bg = C.bg_statusline, fg = C.white0 },
+    z = { bg = C.bg, fg = C.green },
 }
 
 gruvbob.command = {
     a = { bg = C.cyan, fg = C.black, gui = 'bold' },
     b = { bg = C.bg, fg = C.cyan },
     c = { bg = C.bg_statusline, fg = C.white0 },
+    z = { bg = C.bg, fg = C.cyan },
 }
 
 gruvbob.visual = {
     a = { bg = C.red, fg = C.black, gui = 'bold' },
     b = { bg = C.bg, fg = C.cyan },
     c = { bg = C.bg_statusline, fg = C.white0 },
+    z = { bg = C.bg, fg = C.red },
 }
 
 gruvbob.replace = {
     a = { bg = C.baby_pink, fg = C.black, gui = 'bold' },
     b = { bg = C.bg, fg = C.cyan },
     c = { bg = C.bg_statusline, fg = C.white0 },
+    z = { bg = C.bg, fg = C.baby_pink },
 }
 
 gruvbob.terminal = {
     a = { bg = C.blue, fg = C.black, gui = 'bold' },
     b = { bg = C.bg, fg = C.cyan },
     c = { bg = C.bg_statusline, fg = C.white0 },
+    z = { bg = C.bg, fg = C.blue },
 }
 
 gruvbob.inactive = {

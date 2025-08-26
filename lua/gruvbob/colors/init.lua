@@ -20,9 +20,9 @@ function C.build_palette()
 
     -- Backgrounds
     C.bg = (options.transparent.bg and C.none) or ((options.swap_backgrounds and C.black) or C.black)
-    C.bg_dark = (options.transparent.bg and C.none) or C.black
+    -- C.bg_dark = (options.transparent.bg and C.none) or C.black
     C.bg_sidebar = (options.transparent.bg and C.none) or C.bg
-    C.bg_statusline = C.black
+    C.bg_statusline = C.bg_dark
     C.bg_fold = C.grey
 
     -- Cursorline Background
@@ -51,7 +51,9 @@ function C.build_palette()
     C.bg_float = (options.transparent.float and C.none) or ((options.swap_backgrounds and C.black2) or C.black2)
     C.fg_float = C.fg
     C.bg_float_border = C.bg_float
-    C.fg_float_border = C.border_fg
+    -- C.fg_float_border = C.border_fg
+    C.fg_float_border = C.grey_fg
+
 
     -- Popups
     C.bg_popup = C.bg_float

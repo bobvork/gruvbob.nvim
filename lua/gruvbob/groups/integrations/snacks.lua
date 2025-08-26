@@ -12,6 +12,10 @@ function M.get()
     G.SnacksPicker = { bg = C.bg }
 
     -- Picker
+    G.SnacksPickerBorder = { fg = C.one_bg2, bg = C.one_bg2 }
+    G.SnacksPickerInputTitle = { fg = C.one_bg, bg = C.yellow }
+    G.SnacksPickerBoxTitle = { fg = C.one_bg, bg = C.yellow }
+    --
 
     return G
 end
